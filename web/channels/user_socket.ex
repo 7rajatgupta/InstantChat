@@ -2,7 +2,7 @@ defmodule InstantChat.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", InstantChat.RoomChannel
+  channel "rooms:*", InstantChat.RoomChannel #using the inbuilt channel to handle messages. YAY!!
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
