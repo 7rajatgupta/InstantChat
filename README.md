@@ -1,5 +1,5 @@
 # InstantChat
-[InstantChat](https://instantchat.io/assets/logo_new.png)
+![InstantChat](https://instantchat.io/assets/logo_new.png)
 
 
 ## A really nice simple and basic chatting app that uses the Phoenix Library.
