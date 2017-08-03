@@ -72,3 +72,7 @@ chatInput.on("keypress", event => {
     chatInput.val("");
   }
 })
+//Lookup for new_message:
+channel.on("new_message", payload => {
+  messageContainer.append(`<br/>[${Date()}] ${payload.body}`)
+});
