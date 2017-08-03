@@ -61,3 +61,14 @@ channel.join()
   .receive("error", resp => { console.log("Unable to join", resp) })
 
 export default socket
+//Hooking up with the HTML:
+//UI
+let chatInput = $("#chat-input");
+let messageContainer = $("#messages");
+
+chatInput.on("keypress", event => {
+  if(event.keyCode === 13){
+    channel.push("new_message", {body:chatInput.val()});
+    chatInput.val("");
+  }
+})

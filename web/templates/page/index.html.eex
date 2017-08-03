@@ -3,4 +3,6 @@
   <p class="lead">Lightning Speed Chatting !<br />May the Force be with you !.</p>
 </div>
 <div id="messages" class="jumbotron">
-  <input id="chat-input"
+  <h3> Enter your message here : </h3>
+  <input id="chat-input" type="text"></input>
+</div>
